@@ -7,7 +7,7 @@ input.onButtonPressed(Button.B, function () {
 input.onPinPressed(TouchPin.P1, function () {
     nb_personnes = 20
 })
-input.onGesture(Gesture.Shake, function () {
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     nb_personnes = 0
     basic.showString("Reset")
 })
