@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     nb_personnes = nb_personnes + 1
 })
 input.onButtonPressed(Button.B, function () {
-    nb_personnes = nb_personnes
+    nb_personnes = nb_personnes - 1
 })
 input.onPinPressed(TouchPin.P1, function () {
     nb_personnes = 20
