@@ -1,15 +1,15 @@
 input.onButtonPressed(Button.A, function () {
     nb_personnes = nb_personnes + 1
 })
-input.onButtonPressed(Button.B, function () {
-    nb_personnes = nb_personnes - 1
-})
-input.onPinPressed(TouchPin.P1, function () {
-    nb_personnes = 20
-})
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     nb_personnes = 0
     basic.showString("Reset")
+})
+input.onButtonPressed(Button.AB, function () {
+    nb_personnes = 20
+})
+input.onButtonPressed(Button.B, function () {
+    nb_personnes = nb_personnes - 1
 })
 let nb_personnes = 0
 basic.clearScreen()
